@@ -8,8 +8,17 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    
+    
+    "@coreui/coreui": "^3.0.0-beta.4",
+        "@coreui/icons": "^1.0.0",
+        "@coreui/utils": "^1.0.0",
+        "@coreui/vue": "^3.0.0-beta.4",
+
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "slim-ui": "^1.2.4",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.14"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.15",
