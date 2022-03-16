@@ -4,7 +4,7 @@
       <div class="leftcontent">
         <span style="font-size: 14px">SENSEX</span>
         <span style="color: green">52,000</span>
-        <span style="color: gray">1.0%</span> <span> </span><span>NIFTY</span>
+        <span style="color: gray">1.0%</span> <span> | </span><span>NIFTY</span>
         <span style="color: green">17,000</span>
         <span style="color: gray">1.2%</span>
       </div>
@@ -53,6 +53,7 @@ export default {
 .leftcontent {
   align-items: center;
   padding: 0 20px;
+  margin: 0 10px;
   font-size: 14px;
 }
 .header {
