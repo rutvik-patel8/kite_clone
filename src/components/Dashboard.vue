@@ -1,25 +1,27 @@
 <template>
-  <div class="header">
-    <div class="header-left">
-      <div class="leftcontent">
-        <span style="font-size: 14px">SENSEX</span>
-        <span style="color: green">52,000</span>
-        <span style="color: gray">1.0%</span> <span> | </span><span>NIFTY</span>
-        <span style="color: green">17,000</span>
-        <span style="color: gray">1.2%</span>
+  <div class="navb shadow-sm">
+    <div class="header">
+      <div class="header-left">
+        <div class="leftcontent">
+          <span style="font-size: 14px">SENSEX</span>
+          <span style="color: green">52,000</span>
+          <span style="color: gray">1.0%</span> <span> | </span><span>NIFTY</span>
+          <span style="color: green">17,000</span>
+          <span style="color: gray">1.2%</span>
+        </div>
       </div>
-    </div>
-    <div class="header-right">
-      <router-link to="/dashboard">Dashboard</router-link>
-      <router-link to="/dashboard/holdings">Holdings</router-link>
-      <router-link to="/dashboard/funds">Funds</router-link>
-      <router-link to="/dashboard/positions">Positions</router-link>
-      <router-link to="/dashboard/orders">Orders</router-link>
-      <router-link to="/dashboard/apps">Apps</router-link>
+      <div class="header-right">
+        <router-link to="/dashboard">Dashboard</router-link>
+        <router-link to="/dashboard/holdings">Holdings</router-link>
+        <router-link to="/dashboard/funds">Funds</router-link>
+        <router-link to="/dashboard/positions">Positions</router-link>
+        <router-link to="/dashboard/orders">Orders</router-link>
+        <router-link to="/dashboard/apps">Apps</router-link>
+      </div>
     </div>
   </div>
   <div class="container">
-    <div class="container-left">
+    <div class="container-left shadow">
        <stock-list></stock-list>
     </div>
     <div class="container-right">
@@ -41,10 +43,13 @@ export default {
 .container{
   display:flex;
   margin:0;
+  max-width: 1387px;
   
 }
 .container-left{
-  flex:0 0 400px;
+  flex:0 0 405px;
+  overflow: scroll;
+  height:580px;
 }
 .container-right{
   flex:1 1 
@@ -60,9 +65,10 @@ export default {
   display: flex;
   margin: 0 auto;
   padding: 0;
+  
 }
-div {
-  margin: 0 auto;
+a{
+  text-decoration: none;
 }
 
 .header-left {
